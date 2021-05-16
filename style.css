@@ -1,0 +1,133 @@
+
+body {
+    /* background-color: #f0ecda; */
+	
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 18px;
+	max-width: 1000px;
+}
+h2, h4 {
+    text-align: center;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+h6 {
+	font-weight: 200;
+}
+p1 {
+	font-weight: 500;
+}
+
+.board1 {
+	margin: auto;
+	background-color: #ebebe4;
+	display: inline-block;
+	text-align:left;
+    width: 1000px;
+    margin: 10px;
+    padding: 10px;
+	box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    /* border: 1px solid black; */
+}
+
+.k1069v, .k1079 {
+	font-size: 16px;
+	background-color: whitesmoke;
+	margin: auto;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	width: 600px;
+}
+.answer {
+	display: inline-block;
+}
+.answer69, .answer79 {
+	color:#969696;
+	margin: auto;
+	width: 600px;
+	border: 1px solid black;
+	padding-left: 90px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+    height: 30px;
+}
+
+
+
+.my-flex-cont {
+	font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+   }
+   .my-flex-box {
+	margin: 0;
+    align-content: left;
+    /* margin: 5px; */
+	margin-top: 10px;
+    padding: 0;
+    flex: 0 1 auto;
+}
+input {
+	width: 140px;
+}
+button {
+	margin-left: 460px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+form {
+    text-align: center;
+}
+#upload {
+    width: 350px;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+#upload:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+#upload:active {
+	position:relative;
+	top:1px;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
