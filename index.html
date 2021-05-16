@@ -5,61 +5,50 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    	    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     </head>
+    <img class="background" src="background.png">
+    <img class="background2" src="background2.png">
 	<body >
- 
-        <h6>Приведение наименований отечественных конденсаторов К10-69В и К10-79 к международному формату</h6>
-        <div class="board1">
-        <h4>Конденсатор К10-69В АЖЯР.673511.002 ТУ</h4>
-
-        <div class="k1069v"><p1>К10-69В-</p1></div>
-
-        <div class="answer69">. . .</div>
-
-        <button class="start69">Подобрать аналог</button>
+        <h5>Ручное приведение наименований отечественных конденсаторов К10-69В и К10-79 к международному формату</h5>
         
-        </div>
         <div class="board1">
-        <h4>Конденсатор К10-79 АЖЯР.673511.004 ТУ</h4> 
-        <div class="k1079"><p1>К10-79-</p1></div>
-        <div class="answer79">. . .</div>
-        <button class="start79">Подобрать аналог</button>
-        
+            <h4>Конденсатор К10-69В АЖЯР.673511.002 ТУ</h4>
+                <div class="k1069v"><p1>К10-69В-</p1></div>
+                <div class="answer69">.   .   .</div>
+                <button class="start69">Подобрать аналог</button>        
         </div>
+
+        <div class="board1">
+            <h4>Конденсатор К10-79 АЖЯР.673511.004 ТУ</h4> 
+                <div class="k1079"><p1>К10-79-</p1></div>
+                <div class="answer79">.   .   .</div>
+                <button class="start79">Подобрать аналог</button>
+        </div>
+
         <br><br>
-        
+
+        <h5>Автоматическое приведение наименований отечественных конденсаторов К10-69В и К10-79 к международному формату</h5>
         <div class="board1">
-            <h4>Загрузка формы</h4>
-        <form enctype="multipart/form-data">
-            <input id="upload" type=file  name="files[]">
-        </form>
-        <div class="my-flex-cont">
-            <div class="my-flex-box"><ul class="original"></ul></div>
-            <div class="my-flex-box"><ul class="answerList"></ul></div>
-        </div>
+            <h4>Загрузите форму</h4>
+                <form enctype="multipart/form-data">
+                    <input id="upload" type=file  name="files[]">
+                </form>
+                <div class="my-flex-cont">
+                    <div class="my-flex-box"><ul class="original"></ul></div>
+                    <div class="my-flex-box"><ul class="answerList"></ul></div>
+                </div>
         </div>
 
         <script type="text/javascript" src="src/korpusFinder.js"></script>
-        <script type="text/javascript" src="src/base.js"></script>
-        
+        <script type="text/javascript" src="src/base.js"></script> 
         <script type="text/javascript" src="src/k1069v.js"></script>
         <script type="text/javascript" src="src/k1079.js"></script>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
-      
         <script type="text/javascript" src="src/script.js"></script>
-        
-  <!-- 
-        
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
-
-         -->
-
-   
     </body>
 </html>
