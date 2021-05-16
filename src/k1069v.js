@@ -10,62 +10,62 @@ var p3dash = document.createElement("p1");
 p3dash.innerHTML="-";
 //ТИП ДИЭЛЕКТРИКА
 var typeD69 = document.createElement("select");
-    var typeMP0 = document.createElement("option");
-    typeMP0.innerHTML = "МП0";
-    var typeN30 = document.createElement("option");
-    typeN30.innerHTML = "Н30";
-    var typeN90 = document.createElement("option");
-    typeN90.innerHTML = "Н90";
+    var type69MP0 = document.createElement("option");
+    type69MP0.innerHTML = "МП0";
+    var type69N30 = document.createElement("option");
+    type69N30.innerHTML = "Н30";
+    var type69N90 = document.createElement("option");
+    type69N90.innerHTML = "Н90";
     
-typeD69.appendChild(typeMP0);
-typeD69.appendChild(typeN30);
-typeD69.appendChild(typeN90);
+typeD69.appendChild(type69MP0);
+typeD69.appendChild(type69N30);
+typeD69.appendChild(type69N90);
 
 div1069.append(typeD69);
 div1069.append(p1dash);
 //НОМИНАЛЬНОЕ НАПРЯЖЕНИЕ
 var voltage69 = document.createElement("select");
-    var voltage25 = document.createElement("option");
-    voltage25.innerHTML = "25";
-    voltage25.style.display = "none";
-    var voltage50 = document.createElement("option");
-    voltage50.innerHTML = "50";
-    voltage50.selected = "true";
-    var voltage100 = document.createElement("option");
-    voltage100.innerHTML = "100";
-    var voltage250 = document.createElement("option");
-    voltage250.innerHTML = "250";
-    var voltage500 = document.createElement("option");
-    voltage500.innerHTML = "500";
+    var voltage6925 = document.createElement("option");
+    voltage6925.innerHTML = "25";
+    voltage6925.style.display = "none";
+    var voltage6950 = document.createElement("option");
+    voltage6950.innerHTML = "50";
+    voltage6950.selected = "true";
+    var voltage69100 = document.createElement("option");
+    voltage69100.innerHTML = "100";
+    var voltage69250 = document.createElement("option");
+    voltage69250.innerHTML = "250";
+    var voltage69500 = document.createElement("option");
+    voltage69500.innerHTML = "500";
 
-voltage69.appendChild(voltage25);
-voltage69.appendChild(voltage50);
-voltage69.appendChild(voltage100);
-voltage69.appendChild(voltage250);
-voltage69.appendChild(voltage500);
+voltage69.appendChild(voltage6925);
+voltage69.appendChild(voltage6950);
+voltage69.appendChild(voltage69100);
+voltage69.appendChild(voltage69250);
+voltage69.appendChild(voltage69500);
 
 div1069.append(voltage69);
 div1069.append(p2dash);
 //ФУНКЦИЯ ВАРИАТИВНОСТИ
 typeD69.addEventListener("change", (event) => {
-    if (typeMP0.selected) {
-        voltage50.selected="true";
-        hiddenVoltage("none","","","","");
-    } else if (typeN30.selected) {
-        voltage25.selected="true";
-        hiddenVoltage("","","","","");
-    } else if (typeN90.selected) {
-        voltage25.selected="true";
-        hiddenVoltage("","","none","none","none")
+    if (type69MP0.selected) {
+        voltage6950.selected="true";
+        hiddenVoltage69("none","","","","");
+    } else if (type69N30.selected) {
+        voltage6925.selected="true";
+        hiddenVoltage69("","","","","");
+    } else if (type69N90.selected) {
+        voltage6925.selected="true";
+        hiddenVoltage69("","","none","none","none")
     }
 })
 
-var hiddenVoltage = function (a,b,c,d,e) {
-    voltage25.style.display = a;
-    voltage50.style.display = b;
-    voltage100.style.display = c;
-    voltage250.style.display = d;
-    voltage500.style.display = e;
+var hiddenVoltage69 = function (a,b,c,d,e) {
+    voltage6925.style.display = a;
+    voltage6950.style.display = b;
+    voltage69100.style.display = c;
+    voltage69250.style.display = d;
+    voltage69500.style.display = e;
 }
 
 //ТИП КОРПУСА
