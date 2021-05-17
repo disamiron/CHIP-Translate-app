@@ -136,7 +136,6 @@ button1.addEventListener('click', function(event) {
     if (capacity69.value) {
         var chip = korpus("К10-69В", typeD69.value, voltage69.value, capacity.value, unitCap.value, shellType.value);
 
-        console.log()
         answer1.innerHTML = "Кондесатор CHIP " + chip + " " + capacity69.value + " " + unitCap69.value +" " + percent69.value;
     } else {
         answer1.innerHTML = "Проверьте правильность заполения формы";

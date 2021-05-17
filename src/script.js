@@ -26,7 +26,13 @@ var ExcelToJSON = function() {
             originalEnemy.innerHTML = string["ORIGINAL"];
             originalEntry.appendChild(originalEnemy);
             var listEnemy = document.createElement("li");
-            listEnemy.innerHTML=("Кондесатор CHIP "+ korpus(string["CHIP"], string["TYPE"], string["V"], string["C"], string["UNIT"], string["SHELL"]) +" "+ string["C"] + " " + string["UNIT"] + " " + string["PERC"]);
+            var chip = korpus(string["CHIP"], string["TYPE"], string["V"], string["C"], string["UNIT"], string["SHELL"]);
+            if (chip) {
+                listEnemy.innerHTML=("Кондесатор CHIP "+ korpus(string["CHIP"], string["TYPE"], string["V"], string["C"], string["UNIT"], string["SHELL"]) +" "+ string["C"] + " " + string["UNIT"] + " " + string["PERC"]);
+            } else {
+                listEnemy.innerHTML="Некорректные данные";
+            }
+            
             answerL.appendChild(listEnemy);
         }
 
