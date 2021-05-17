@@ -12,6 +12,8 @@ function korpus (model, type, volt, oppacity, unit, shell) {
     var unit = (unitBase.indexOf(unit));
     if (unit==1) {
         oppacity*=1000000;
+    } else if (unit==2){
+        oppacity*=1000
     }
     
     for (let spr of storage79[model][type][volt]){
